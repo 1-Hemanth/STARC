@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidbg"
+    tools:context=".UserType">
+
+    <Button
+        android:id="@+id/uddumb"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="193dp"
+        android:text="DEAF and DUMB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/udeaf"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/udeaf"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="34dp"
+        android:text="DEAF"
+        app:layout_constraintBottom_toTopOf="@+id/uddumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unormal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/normal"
+        android:layout_width="395dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="@font/aldrich"
+        android:text="S   T   A   R   C "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/unormal"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="46dp"
+        android:text="NORMAL"
+        app:layout_constraintBottom_toTopOf="@+id/udeaf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="86dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Choose your category"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normal"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
